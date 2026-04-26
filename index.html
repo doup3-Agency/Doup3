@@ -36,6 +36,11 @@ nav.scrolled{border-color:var(--border);padding:14px 6vw}
 .btn-primary:hover{background:#6d28d9;transform:translateY(-2px);box-shadow:0 8px 30px rgba(124,58,237,.4)}
 .btn-ghost{display:inline-flex;align-items:center;gap:8px;color:#aaa;font-size:.9rem;font-weight:500;text-decoration:none;border:1px solid #222;padding:16px 28px;border-radius:6px;transition:color .2s,border-color .2s}
 .btn-ghost:hover{color:var(--white);border-color:#555}
+.btn-portfolio{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--white);font-size:.9rem;font-weight:700;letter-spacing:.06em;text-decoration:none;border:2px solid var(--purple-light);padding:16px 32px;border-radius:6px;position:relative;overflow:hidden;transition:color .25s,box-shadow .25s,transform .2s;text-transform:uppercase}
+.btn-portfolio::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--purple),var(--purple-light));opacity:0;transition:opacity .25s}
+.btn-portfolio:hover::before{opacity:1}
+.btn-portfolio span{position:relative;z-index:1}
+.btn-portfolio:hover{transform:translateY(-2px);box-shadow:0 0 24px rgba(167,139,250,.55),0 0 60px rgba(124,58,237,.25)}
 .hero-stats{display:flex;gap:3rem;margin-top:5rem;padding-top:3rem;border-top:1px solid #1a1a1a;opacity:0;animation:fadeUp .8s .7s forwards;flex-wrap:wrap}
 .hero-stat-num{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:var(--white);letter-spacing:-.03em;line-height:1}
 .hero-stat-num span{color:var(--purple)}
@@ -192,6 +197,7 @@ footer{background:var(--black);color:var(--white);padding:64px 6vw 40px}
     <div class="hero-actions">
       <a href="#contacto" class="btn-primary">Empezar ahora →</a>
       <a href="#resultados" class="btn-ghost">Ver resultados</a>
+      <a href="https://colotek.com.mx/creamos-director" target="_blank" class="btn-portfolio"><span>🎬 Portafolio</span></a>
     </div>
     <div class="hero-stats">
       <div><div class="hero-stat-num">$<span>3K</span></div><div class="hero-stat-label">Facturación mensual generada para cliente</div></div>
